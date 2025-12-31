@@ -4,4 +4,13 @@ export default ({ env }) => ({
   app: {
     keys: env.array('APP_KEYS'),
   },
+  middleware: {
+    settings: {
+      cors: {
+        enabled: false,
+        origin: [],
+        headers: '*',
+      }
+    },
+  },
 });
